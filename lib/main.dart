@@ -238,10 +238,12 @@ class _MyAppState extends State<MyApp> {
   }
 
   void _reset() {
-    _acontroller.text = " ";
+    setState(() {
+       _acontroller.text = " ";
     _bcontroller.text = " ";
     _ccontroller.text = " ";
     _dcontroller.text = " ";
-    realResult = 0.0;
+    realResult=0.0;
+    });
   }
 }
